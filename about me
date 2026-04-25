@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Noelle</title>
+    <style>
+        :root {
+            --bg-color: #e5d9cf;
+            --paper-color: #d7d1c1;
+            --border-color: #7a7d6d;
+            --text-color: #333;
+            --line-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(90deg, rgba(255,255,255,.4) 50%, transparent 50%),
+                linear-gradient(rgba(255,255,255,.4) 50%, transparent 50%);
+            background-size: 50px 50px;
+            font-family: 'Courier New', Courier, monospace; /* To get that typewriter/handwritten feel */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 15px;
+            position: relative;
+        }
+
+        h1 {
+            grid-column: span 2;
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .box {
+            background-color: var(--paper-color);
+            border: 2px solid var(--border-color);
+            padding: 12px;
+            background-image: linear-gradient(var(--line-color) 1px, transparent 1px);
+            background-size: 100% 1.6rem;
+            line-height: 1.6rem;
+            box-shadow: 3px 3px 0px rgba(0,0,0,0.05);
+        }
+
+        /* Profile Image Styling */
+        .profile-container {
+            background: white;
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .header-text {
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* The little bear peeking out */
+        .peeking-bear {
+            position: absolute;
+            right: -25px;
+            top: 55%;
+            width: 60px;
+            z-index: 10;
+        }
+
+        .arrow-text {
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            font-size: 0.8rem;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ALL ABOUT ME !!!</h1>
+    
+    <div class="arrow-text">⤴ This is me !</div>
+
+    <div class="profile-container">
+        <img src="https://api.screenshotmachine.com/?key=123456&url=https://your-image-link.png" alt="Noelle Drawing">
+    </div>
+
+    <div class="box">
+        <span class="header-text">MY FAVORITE</span>
+        <div><span class="label">Artist:</span> beabadoobee</div>
+        <div><span class="label">Song:</span> lovesong</div>
+        <div><span class="label">Manga:</span> chainsaw man & JJK</div>
+        <div><span class="label">Movie:</span> Spree</div>
+    </div>
+
+    <div class="box full-width">
+        <div><span class="label">Name:</span> Noelle</div>
+        <div><span class="label">Birthday:</span> 3rd June</div>
+        <div><span class="label">Age:</span> 11 (12 this year)</div>
+        <div><span class="label">Pronouns:</span> she/her</div>
+        <br>
+    </div>
+
+    <div class="peeking-bear">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="70" cy="50" r="30" fill="white" stroke="#7a7d6d" stroke-width="2" />
+            <circle cx="60" cy="45" r="3" fill="black" />
+            <circle cx="80" cy="45" r="3" fill="black" />
+            <path d="M 65 55 Q 70 60 75 55" fill="none" stroke="black" stroke-width="2" />
+        </svg>
+    </div>
+</div>
+
+</body>
+</html>
